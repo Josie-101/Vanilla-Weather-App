@@ -12,17 +12,24 @@
     <div class="App">
     <div class="container">
         <div class="weather-app">
+              <div class="overview">
     <h1>Melbourne</h1>
     <ul>
         <li>Saturday 11:00</li>
         <li>Sunny</li>
     </ul>
-    <div class="row">
+       <div class="row">
         <div class="col-md-6">
+            <div class="clearfix weather-temperature">
             <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" 
             alt="Sun"
+            class="float-left"
             />
-            14℃ | ℉
+            <div class="float-left">
+           <strong> 14</strong>
+           <span class="units">℃ | <a href="#">℉</a></span>
+            </div>
+            </div>
         </div>
         <div class ="col-md-6">
         <ul>
@@ -30,13 +37,15 @@
             <li>Humidity: 46%</li>
             <li>Wind: 21km/h</li>
         </ul>
+        </div>
     </div> 
     </div>
     <small>
         <a href="https://github.com/Josie-101/Vanilla-Weather-App/tree/main/src"
-    </small>
+        target=+_blank"
         >Open-source code</a>
         By Jo B
+        </small>
     </div>
     </div>
     </div>
