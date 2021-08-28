@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <link rel="stylesheet" href ="src/style.css" />
     <title>Weather App</title>
 </head>
@@ -13,10 +14,10 @@
     <div class="container">
         <div class="weather-app">
               <div class="overview">
-    <h1>Melbourne</h1>
+    <h1 id = "city"></h1>
     <ul>
         <li>Saturday 11:00</li>
-        <li>Sunny</li>
+        <li id = "description"></li>
     </ul>
        <div class="row">
         <div class="col-md-6">
@@ -26,16 +27,15 @@
             class="float-left"
             />
             <div class="float-left">
-           <strong> 14</strong>
+           <strong id ="temperature"> </strong>
            <span class="units">℃ | <a href="#">℉</a></span>
             </div>
             </div>
         </div>
         <div class ="col-md-6">
         <ul>
-            <li>Precipitation: 0%</li>
-            <li>Humidity: 46%</li>
-            <li>Wind: 21km/h</li>
+            <li> Humidity: <span id = "humidity"></span></li>
+            <li> Wind: <span id = "wind"></span> km/h </li>
         </ul>
         </div>
     </div> 
