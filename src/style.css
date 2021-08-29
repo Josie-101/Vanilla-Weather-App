@@ -38,7 +38,10 @@ li:first-letter {
     padding: 20px;
     border: 1px solid darkgray;
     border-radius: 5px;
+    background-image: url("Cloud 1.jpg");
 }
+
+
 
 .weather-temperature img {
     margin-right: 20px;
@@ -46,9 +49,14 @@ li:first-letter {
     width: 64px;
 }
 
+.weather-temperature {
+    color: black;
+}
+
 .weather-temperature strong {
-    color: blue;
+    color: black;
     font-size: 64px;
+    line-height: 1;
     font-weight: 400;
 }
 
@@ -56,4 +64,20 @@ li:first-letter {
     position: relative;
     font-size: 16px;
     top: -34px;
+    font-weight: bolder;
+}
+
+.weather-temperature .active {
+    color: black;
+    cursor: default;
+}
+
+.weather-temperature .active:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+
+a:link {
+    text-decoration: none;
 }
